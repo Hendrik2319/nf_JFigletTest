@@ -10,6 +10,7 @@ public class Main {
         System.out.println(generateAsciiArt("Hello world!"));
     }
 
+    @SuppressWarnings("SameParameterValue")
     private static String generateAsciiArt(String str) {
         try {
             return FigletFont.convertOneLine(str);
